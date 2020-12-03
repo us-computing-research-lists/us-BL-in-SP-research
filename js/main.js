@@ -45,11 +45,11 @@ function processData(allText){
         newCell.innerHTML = "<b>" + headers[i] + "</b>";
   }
 
-  for (var i=1; i<allTextLines.length; i++) {
+  for (var i=1; i<allTextLines.length - 1; i++) { // subtract 1 since standard is to have \n at the end of csv
     var rowX  = newTable.insertRow(i);
     var data = allTextLines[i];
 
-    for(var j = -1; j < headers.length; ++j){
+    for(var j = -1; j < headers.length; ++j){ 
       var newCell = rowX.insertCell(j+1);
       var insertString = i;
       // Index col
