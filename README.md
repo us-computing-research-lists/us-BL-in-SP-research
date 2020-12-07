@@ -1,4 +1,4 @@
-# [us-computing-research-lists.github.io/us-BIPOC-in-computing-research](https://us-computing-research-lists.github.io/us-BL-in-SP-research)
+# [us-computing-research-lists.github.io/us-BL-in-SP-research](https://us-computing-research-lists.github.io/us-BL-in-SP-research)
 
 This repo hosts the website listing current BIPOC in the UUS doing computing research. The code used to make this site came from the [US Women in Robotics list](https://github.com/us-women-in-robotics-research/us-women-in-robotics-research.github.io/). This site is currently maintained by Ph.D. students from [University of Michigan ECE](https://ece.engin.umich.edu/).
 
