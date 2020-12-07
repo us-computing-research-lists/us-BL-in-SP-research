@@ -2,7 +2,7 @@
 $(document).ready(function() {
   $.ajax({
       type: "GET",
-      url: "https://us-computing-research-lists.github.io/us-BIPOC-in-computing-research/list.csv",
+      url: "https://us-computing-research-lists.github.io/us-BL-in-SP-research/list.csv",
       dataType: "text",
       success: function(data) {processData(data);}
    });
