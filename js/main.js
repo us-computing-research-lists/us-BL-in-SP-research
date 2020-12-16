@@ -45,7 +45,7 @@ function processData(allText){
         newCell.innerHTML = "<b>" + headers[i] + "</b>";
   }
 
-  for (var i=1; i<allTextLines.length - 1; i++) { // subtract 1 since standard is to have \n at the end of csv
+  for (var i=1; i<allTextLines.length; i++) { // not sure if github changed functionality, removed; subtract 1 since standard is to have \n at the end of csv
     var rowX  = newTable.insertRow(i);
     var data = allTextLines[i];
 
