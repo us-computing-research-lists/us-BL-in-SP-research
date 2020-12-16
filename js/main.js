@@ -24,12 +24,26 @@ function csvToArray(text) {
     return ret;
 };
 
+// function for sorting Array by date of PhD
+// at time of writing date of PhD is index 2 
+function sortByDate(a, b) {
+    if (a[2] === b[2]) {
+        return 0;
+    }
+    else {
+        return (a[2] < b[2]) ? -1 : 1;
+    }
+}
+
 function processData(allText){
   var newTable = document.createElement("TABLE");
   newTable.setAttribute("id", "myTable");
   document.body.appendChild(newTable);
 
   var allTextLines = csvToArray(allText);
+  // sort by date of PhD
+  allTextLines.sort(sortByDate);
+  
   var headers = allTextLines[0];
   
   var header = newTable.createTHead();
