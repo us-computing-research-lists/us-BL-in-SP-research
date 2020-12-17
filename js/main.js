@@ -37,7 +37,7 @@ function sortByDate(a, b) {
         return 0;
     }
     else {
-        return (a[2] < b[2]) ? 1 : -1;
+        return (a[2] < b[2]) ? -1 : 1;
     }
 }
 
