@@ -80,7 +80,7 @@ function processData(allText){
       
       // Data cols
       insertString = data[j];
-      if(j == headers.length - 1){
+      if(j > headers.length - 3){ // last two columns are webpage links
         insertString = getWebLinkString(data[j]);
       }
       // else if(j == headers.length - 1){
