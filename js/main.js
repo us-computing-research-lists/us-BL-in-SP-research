@@ -28,10 +28,10 @@ function csvToArray(text) {
 // at time of writing date of PhD is index 2 
 function sortByDate(a, b) {
     if (a[2] === 'Year of Ph.D. (received or expected)') {
-        return 1;
+        return -1;
     }
     if (b[2] == 'Year of Ph.D. (received or expected)') {
-        return -1;
+        return 1;
     }
     if (a[2] === b[2]) {
         return 0;
